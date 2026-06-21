@@ -2,7 +2,7 @@
 
 **Author**: Vit0rg  
 **Created**: June 20th 2026  
-**Document last updated:** June 21th 2026 
+**Document last updated:** June 21st 2026 
 **Based on**: 
 [The algorithm](https://gist.github.com/chrisuehlinger/c38fff88b7e429c81c2582430a2c3ab9)
 [Factorio Automated: A 1000SPM self-expanding factory built with bots and Lua](https://youtu.be/PGiTkkMOfiw)
