@@ -9,7 +9,7 @@
 
 - [Introduction](#introduction)
 - [Synergy 1: Game Loop Orchestrator](#synergy-1-game-loop-orchestrator)
-- [Synergy 2: Zero-Overhead Dispatcher](#synergy-2-zero-overhead-dispatcher)
+- [Synergy 2: Minimal-Overhead Dispatcher](#synergy-2-minimal-overhead-dispatcher)
 - [Synergy 3: Performance Optimizer](#synergy-3-performance-optimizer)
 - [Synergy 4: Turn-Based Flow](#synergy-4-turn-based-flow)
 - [Synergy 5: Cross-Platform Behavior Injector](#synergy-5-cross-platform-behavior-injector)
@@ -72,7 +72,7 @@ end
 
 ---
 
-## Synergy 2: Zero-Overhead Dispatcher
+## Synergy 2: Minimal-Overhead Dispatcher
 
 **Architectural Role:** Routing and Selection. Replaces verbose `if/elseif` chains with instant, zero-allocation O(1) hash dispatch.  
 **Core Question Answered:** _"Which specific algorithm or handler should execute for this exact input?"_  
@@ -153,7 +153,7 @@ end, 5000, 1, "enablePlayerConsumable_" .. name)
 
 ## Synergy 4: Turn-Based Flow
 
-**Architectural Role:** Procedural Sequencing and Zero-Overhead Iteration. Relies on simple, sequential function calls and strict C-style loops to completely avoid `ipairs`/`pairs` GC pressure.  
+**Architectural Role:** Procedural Sequencing and minimal-overhead Iteration. Relies on simple, sequential function calls and strict C-style loops to completely avoid `ipairs`/`pairs` GC pressure.  
 **Core Question Answered:** _"How do we sequence game steps predictably and iterate over collections with zero allocation overhead?"_  
 **Patterns Used:** Procedural Phase Loop + Implicit Contract + C-Style Iterator.
 
